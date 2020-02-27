@@ -1,0 +1,128 @@
+Architectures are influenced by the SYSTEM STAKEHOLDERS.
+Architectures are influencded by the developing org
+Archictectures are influed by the architects background 
+Architure is influenced by the organizations technical enviornment EG Enterprise  wide standards etc.
+
+A Stakeholder is anyone who has a stake in or has an interest to seeing the succesful delivery of the system.
+The stakeholder to provide the the primary source of  features and requirements is called the SME 
+Eample of a problem domain and a stakeholder ---> SURGICAL ROBOTS AND EITHER THE DOCTOR OR PATIENT......
+
+4 steps of the SDLC 
+         1) INCEPTION]
+         2) ELOBARTION
+         3) CONSTRUCTION 
+         4) TRANSITION 
+         
+         
+         
+. AN ORGANIZATIONS PREVIOUS INVESTIMENTS AND EXPERIENCES CAN SHAPE THE DECISONS OF A NEW PRODUCT or SERVICE BY
+
+1) The environment is based soly on either a JAVA or .NET environment aND THUS the STAFF IS TRAINED IN EITHER ONE OF THOSE
+2) THE hardware is linux or windows based or other based requiring knowledge of how to use said hardware.
+3) THe STAFFS frameworks they use SPRING framework or JEE these are java based...
+4) the rganizations may have invest
+  
+  
+  
+  
+  
+  ____________ ESSAY QUESTIONS SECTION 1 _______________________________
+  
+  Question 3
+What are the four phases of the Unified Process SDLC (Software Development Lifecycle)? (You will need to research this topic) Hint: The first phase is Inception.
+During which of these phases is the system’s architecture decided upon? 
+Answer
+UP SDLC describes a development process to be followed by the development team to build a system from a project’s start to end. A process is defined with a number of activities that are performed by the development team during the project. UP divides these activities into four phases: 
+Inception: The overall goals (scope) of the project are established. An initial schedule and budget are created. Risks to success are identified. The decision of whether to proceed with the project is make. 
+Elaboration: Define the project’s budget and schedule. Define a majority of the system’s requirements. Design / decide upon the system’s architecture. 
+Construction: Essentially design and build the system according to the requirements. Unified Process describes an iterative process where manageable chunks (related features) are analyzed, designed, constructed, and tested in 3-4 week iterations. The system is built incrementally over a number of iterations until finished. 
+Transition: Final (integration or acceptance) testing is performed and defects are resolved. The completed system is delivered or put into production. 
+The system’s architecture is decided upon early in the project lifecycle. In UP terms, the architecture should be completed by the end of the elaboration phase. 
+
+
+
+
+
+
+Question 9
+Describe the differences between the views of a system held by architects vs. the view of a system held by developers. 
+Answer
+Grader: Answers should describe these views, not just list B&S vs N&D. 
+The architect has a broad and shallow view of the system. The architect takes a broad view that is concerned with understanding and accommodating all of the features required by the customer. However, because most architects are mere mortals they cannot internalize and understand the design and implementation of all these features. 
+The developer has a narrow and deep view of the system. Each of the several developers working on a project assumes responsibility for the design and implementation (delivering) of several of those features. Design and implementation requires a deep and detailed understanding of the features requirements, code design, etc. However, developers tend to ignore the design and implementation of those features they are not responsible for. 
+
+
+
+
+_______________________Essay Questions Section 2___________________________
+
+
+Question 4
+Provide a description of Component (Class) Cohesion. 
+Describe why the decomposition of a system into components should be driven by cohesion.  
+Note: Cohesion was not covered in the lecture. If you do not remember from 3354 (Software Engineering), you should research. 
+Answer
+Cohesion is a property we can assign to a component that describes how closely related the features implemented by the component. A cohesive component is ‘focused in its intent’. A component that implements unrelated features (i.e. customer and product management) has less cohesion than the two components that would result if the same set of features were decomposed into separate components. A component with high cohesion is ‘better’ i.e. the component is easier to reuse, understand, modify, etc. 
+When we decompose a system’s design into components, each component should maintain an individual set of focused responsibilities which is the definition of high cohesion. If we find that a component in the evolving design is not focused, too large, etc., we should further decompose this component into two or more components based on the responsibilities assigned to the original component. 
+
+
+Question 6
+Briefly describe the characteristics of applications the three-tier architecture should be applied to. 
+Name each tier and describe the types of responsibilities each tier implements. 
+Answer
+The three-tier architecture describes how application / system designs should be partitioned along three types of services that are usually required by a web-application, or any application that provides both a user interface and uses a database to maintain persistent information. 
+These tiers are: 
+Presentation: Components that implement GUI / user interface services i.e. services that present information to the user. 
+Business (Application): Components that implement application / business logic including data validation, workflows, report generation, controllers, and others. Sometimes called the Application tier. 
+Data (Service): Components that provides the services needed to persist (save and retrieve) application data to/from a database server. This tier also contains services that act as proxies to external services used by the system. Sometimes called the Data or Persistence tier.  
+
+
+______________________Essay Questions Section 3______________________________
+
+
+Question 1
+Name and describe the six quality attributes discussed in class (slides). 
+Answer
+1.	Availability: The ability of the system to remain available in spite of abnormal processing conditions including system failures, incorrect inputs, and others. 
+2.	Modifiability: The ability of the system to accommodate changes or extensions to the system’s requirements or environment the system executes within. 
+3.	Performance: The ability of the system to meet expected execution requirements such as response time and transactions executed per minute. 
+4.	Security: The ability of the system to prevent or detect unauthorized access to services or data maintained by the system. 
+5.	Testability: The ease in which defects (bugs) in the system’s components can be identified. 
+6.	Usability: The ease in which the system’s users are able to productively use the system.
+
+Question 2
+Describe the meaning / purpose of Stimulus, Response, and Response Measure components of a Quality Attribute Scenario. 
+How many responses will a typical scenario describe? 
+Answer
+See Slide 6 or the Section “Quality Attribute Scenarios”. 
+A.	Stimulus describes the event that triggers the scenario. The event is generally a design or runtime problem that the system must somehow deal with. In other words, a fault that the system will keep from becoming a failure. 
+B.	Response is a feature of the system designed to address the Stimulus. That is, an action taken by the system to address event / fault. 
+C.	Response Measure are metrics designed to measure the effectiveness of the Response. This allows several responses to be compared with a tradeoff decision to be made by the customer i.e. Performance vs Cost of implementation. 
+A scenario will typically present several responses each of which address the stimulus in a differ manner. Again, it is the decision of the Customer / SME to decide which solution best meets their application’s needs.  
+
+__________________________Essay Questions Section 4_____________________________________________________
+
+
+Question 5
+Describe the three Responsibility Driven Design class roles found in most software designs? Hint: Identified as a Design Pattern in the slides.
+Answer
+Boundary Classes are used to create a “presentation” of the model classes e.g. a screen with a form or report that the user interacts with as the user interacts with the system to obtain their goals. Also called Presentation or View classes.
+Entity Classes are ‘things’ in the problem domain. These classes are CRUD by controllers and in most cases are persisted. Entities are easy to identify and are extracted from the requirements or use cases e.g. Customer, Product, etc. Also called Domain or Model classes.
+Controller Classes implement / manage a workflow in the design from start to finish. E.g. a class that implements a use case scenario. Each workflow has a number of steps and decisions that are made as the workflow is executed. These steps and rules are encoded in the controller class design. Typically, there is a 1-1 between workflows and individual controller classes. 
+
+
+Question 8
+What is the difference between intelligent or dumb controller classes? 
+Why do we want our controller classes to be dumb? 
+How do we keep our controller classes dumb? 
+Answer
+A controller’s intelligence is an indicator of the amount of responsibility the class implements. An intelligent class directly implements its responsibilities in its code / logic. A dumb controller implements few of its responsibilities. But this does not mean that dumb controllers do not assume their responsibilities. Rather a dumb controller delegates the implementation of those responsibilities to its delegate service classes.
+An intelligent controller is a controller that implements many of its responsibilities. This indicates a large and complex class that lacks cohesion and so is difficult to understand, modify, reuse, etc. 
+Controllers should know what to do (and in what order) but not how to do. Dumb controllers should implement the logic of a workflow, but delegate the implementation of workflow steps to delegate (service) classes. 
+
+
+_________________________________Essay Section 6 _________________________________________________________
+
+
+
+
